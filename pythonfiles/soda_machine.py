@@ -1,6 +1,6 @@
 from user_interface import UserInterface
 from coins import Coin
-
+from cans import Can
 
 class SodaMachine:
     def __init__(self):
@@ -21,11 +21,11 @@ class SodaMachine:
     def fill_inventory(self):
         """Method will fill SodaMachine's cans list with certain amounts of each can when called."""
         for index in range(10):
-            self.inventory.append(cans.Cola())
+            self.inventory.append(Can.Cola())
         for index in range(10):
-            self.inventory.append(cans.OrangeSoda())
+            self.inventory.append(Can.OrangeSoda())
         for index in range(10):
-            self.inventory.append(cans.RootBeer())
+            self.inventory.append(Can.RootBeer())
 
     def begin_transaction(self, customer):
         """Method is complete. Initiates purchase if user decides to proceed. No errors."""
