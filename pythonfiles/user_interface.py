@@ -83,7 +83,7 @@ class UserInterface:
             print("Not a valid selection\n")
             return False, None
 
-    def try_parse_int(value):
+    def try_parse_int(self, value):
         """Attempts to parse a string into an integer, returns 0 if unable to parse. No errors."""
         try:
             return int(value)
