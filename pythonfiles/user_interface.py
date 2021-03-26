@@ -1,10 +1,10 @@
 import os
 
 
-class UserInterface:
+
 
     def simulation_main_menu():
-        """Main menu prompting user to choose an option"""
+         """Main menu prompting user to choose an option"""
         validate_user_selection = (False, None)
         while validate_user_selection[0] is False:
             print("\t\t-Simulation menu-")
@@ -28,11 +28,11 @@ class UserInterface:
 
     def display_customer_wallet_info(coins_list, total_value):
         """Takes in a list of ints to display number of coins along with total value of coins."""
-        print('You have {coins_list[0]} Quarters')
-        print('You have {coins_list[1]} Dimes')
-        print('You have {coins_list[2]} Nickels')
-        print('You have {coins_list[3]} Pennies')
-        print('Your wallet\'s total value is {total_value}')
+        print(f'You have {coins_list[0]} Quarters')
+        print(f'You have {coins_list[1]} Dimes')
+        print(f'You have {coins_list[2]} Nickels')
+        print(f'You have {coins_list[3]} Pennies')
+        print(f'Your wallet\'s total value is {total_value}')
 
     def display_welcome():
         """Initial method asking user if they'll make a purchase. No errors."""
@@ -83,7 +83,7 @@ class UserInterface:
             print("Not a valid selection\n")
             return False, None
 
-    def try_parse_int(self, value):
+    def try_parse_int(value):
         """Attempts to parse a string into an integer, returns 0 if unable to parse. No errors."""
         try:
             return int(value)

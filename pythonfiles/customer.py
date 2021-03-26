@@ -1,6 +1,7 @@
 from wallet import Wallet
 from backpack import Backpack
 from user_interface import UserInterface
+import user_interface
 
 class Customer:
     def __init__(self):
